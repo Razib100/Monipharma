@@ -1,0 +1,135 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body{
+  overflow: hidden;
+}
+.background{
+  height: 100vh;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(../img/153.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.row{
+  max-width: 1180px;
+  margin: 0 auto;
+}
+.logo{
+  margin-top: 90px;
+  width: 447px;
+  height: 141px;
+}
+.your-health{
+  color: #fff;
+  font-size: 90%;
+  word-spacing: 3px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-left: 20%;
+  font-family: 'Flamenco', cursive;
+}
+.colorchange{
+  animation: colorchange 1s infinite;
+}
+@keyframes colorchange {
+  0%{color:#fff;}
+  25%{color:#fff;}
+  50%{color:#F26522;}
+  100%{color:#F26522;}
+}
+hr{
+  max-width:50px;
+  border-width:3px;
+  border-color:#f05f40;
+  margin-left: 50%;
+  }
+hr.light{
+  border-color:#fff
+  }
+  .all-button{
+    border-radius: 20px;
+  }
+a{
+  color:#f05f40;-webkit-transition:all .2s;transition:all .2s
+  }
+a:hover{
+  color:#f05f40
+  }
+  .btn{
+    font-weight:700;
+    text-transform:uppercase;
+    border:none;
+    border-radius:300px;
+    font-family:'Open Sans','Helvetica Neue',Arial,sans-serif
+    }
+.btn-xl{
+    padding:1rem 2rem
+    }
+    .btn-primary{
+    background-color:#f05f40;
+    border-color:#f05f40
+    }
+.btn-primary:active,.btn-primary:focus,.btn-primary:hover{
+    color:#fff;
+    background-color:#ee4b28!important
+    }
+.btn-primary:active,.btn-primary:focus{
+      -webkit-box-shadow:0 0 0 .2rem rgba(240,95,64,.5)!important;box-shadow:0 0 0 .2rem rgba(240,95,64,.5)!important
+    }
+/* #footer{
+        font-size: 13px;
+      }
+#footer a{
+      text-decoration: none;
+    }
+.footer-wp{
+  margin-top: 12%;
+} */
+  <!-- ##########################################Media query##################################################### -->
+
+  @media (max-width:350px){
+    .logo{
+      margin-top: 0%;
+      width: 50px;
+      height: 60px;
+    }
+    .your-health{
+      font-size: 10px;
+    }
+    hr{
+      margin-left: 40%;
+    }
+    }
+
+@media (max-width:500px){
+  .logo{
+    margin-top: 5%;
+    width: 180px;
+    height: 60px;
+    }
+    .your-health{
+      font-size: 10px;
+      margin-left: 5%;
+    }
+    #all-button {
+      margin-bottom: 0%;
+    }
+
+}
+@media (max-width:768px){
+  .logo{
+    margin-top: 4%;
+    width: 250px;
+    height: 90px;
+    }
+    .your-health{
+      font-size: 10px;
+      margin-left: 5%;
+    }
+    #all-button {
+      margin-top: 10%;
+    }
+  }
